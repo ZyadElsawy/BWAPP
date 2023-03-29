@@ -1,0 +1,4 @@
+We see a text box and add entry and delete entry buttons,  when we insert in thing in the box and click add entry , the record is added in the table and displayed on the screen .
+Let's try to enter ' to see what happens, the record is added but it is not shown on the page , so now we need to find the write syntax to make our query displayed on the screen .
+After many tries I found that this input " ',' '); " made a blank record ind it is dispalyed on the screen , so now we need to enter a query to see if it executes and return us back the result .
+Iet's try this query " ',sqlite_version()); " , it returned back the version of the sqlite.

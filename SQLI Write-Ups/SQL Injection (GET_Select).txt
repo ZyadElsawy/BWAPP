@@ -1,0 +1,7 @@
+There is a combo box that is want us to select a movie to search for.
+When we choose a movie and press go if it exists it return us some info.
+But here there is no input field to test for SQL injection , so we have to intercept this request to modify it .
+When we intercept the request with burp there is a movie parameter and it has the movie number value like this " movie=1&action=go "  .
+Let's modify this value and make it like this " movie=1'&action=go " .
+It returns this error message "  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'' at line 1 ".
+There is a SQL Injection

@@ -1,0 +1,7 @@
+There is a search field to search for movies and there is a message says that it will send the result by email.
+Let's try to inject this " ' " and see what happens.
+It returned the same message " The result will be sent by e-mail... " so now we know that we are testing blindly.
+Let's try to test for time-based sqli and if the response is delayed then there is a blind time-based sqli.
+Let's inject this payload " iron'-SLEEP(5)# ".
+
+The response is delayed so the vulnerability exists.
