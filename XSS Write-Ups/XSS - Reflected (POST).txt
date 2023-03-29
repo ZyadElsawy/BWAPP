@@ -1,0 +1,8 @@
+We see two input fields "first name" and "last name" lets try to write any anything and submit such as "first name: test " "last name: test "
+We will notice that the two inputs are reflected on the screen "Welcome test test".
+Lets try two input html tags to see how it responds , "first name : <h1>test</h1> "  "last name : <h1>test</h1> "
+We will notice that the browser rendered the input and reflected it back to the screen as actual headers.
+We now know that the two input fields are vulnerable to R-XSS.
+Lets inject javascript code to see how It responds , "First name : <script>alert("XSS");</script>"  "Last name : test"
+
+ALERTED!!!

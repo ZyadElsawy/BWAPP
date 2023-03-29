@@ -1,0 +1,7 @@
+When we enter the challenge there is a message displaying your user-agent header content.
+So start the burpsuite and turn on the interception and click on the challenge again .
+After intercepting the request try to change the content of user-agent header 
+To anything else to see what happens , we notice that what ever the content of the user- agent header it is reflected on the challenge page.
+Now we go back and intercept the request again and change the content of the user-agent header to this payload " <script>alert(1);</script> "
+
+ALERTED!!!!!!!

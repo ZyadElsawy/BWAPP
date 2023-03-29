@@ -1,0 +1,5 @@
+There is combo box that contains movie types and like button when I choose any type and press the button I got this message " Thank you for making your choice! " it is not reflected on the page .
+Let's intercept the request to see what happens .
+The type I chose is passed in parameter called " genre= " and I noticed that this value is passed in cookies too like this " movie_genre=action " 
+Let's try to type any type of movies that is not in the list like " thriller ".
+The type we entered is reflected in the cookies , so you can put malicious  code in there that will be executed using cookies

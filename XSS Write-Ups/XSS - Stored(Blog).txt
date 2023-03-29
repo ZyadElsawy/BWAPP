@@ -1,0 +1,6 @@
+We see input field and submit button lets enter anything in the input filed such as " test " .
+The input is reflected on the screen in a table that include the owner , date , entry of the blog.
+Lets try to inject some html like " <h1>test</h1> " to see what happens.
+The html is injected and rendered on the screen , this input field is vulnerable.
+Lets try to inject this payload  " <script>alert(1);</script> " 
+ALERTED!!!!!!!!!!!

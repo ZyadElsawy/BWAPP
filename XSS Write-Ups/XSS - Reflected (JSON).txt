@@ -1,0 +1,13 @@
+In this challenge we have a search bar that takes a movie name and search for it , there is hint says " our master really loves Marvel movies :)"
+Lets input any marvel movie name such as "Iron man" and see what will come out.
+It gave me that output "Yes! We have that movie..." we will notice that the input is not reflected on the screen.
+Lets try to enter random test that we know it is not a marvel movie and see how it responds lets enter this " Test ".
+Here is the output " test??? Sorry, we don't have that movie :( " we notice that in this case our input is reflected on the screen.
+Lets try to enter some html such as " <h1>test</h1> " to see how it responds.
+We notice that the html code is rendered on the screen , now we know that this input field is vulnerable to RXSS. 
+Lets try to inject some javascript such as " <script>alert("XSS");</script> " to see how it responds.
+It gave us an error message in json " ??? Sorry, we don't have that movie :("}]}'; // var JSONResponse = eval ("(" + JSONResponseString + ")");  "
+When we view the page source we see this line of code that is between <script></script>  " var JSONResponseString = '{"movies":[{"response":"<script>alert(1) " . 
+Since that the input is already been inserted between two script tags we don't need the opening tag in our payload and we need to close the json statement before our alert function 
+So lets try this payload " }]}';alert(1)</script> " 
+ALERTED!!!!!!

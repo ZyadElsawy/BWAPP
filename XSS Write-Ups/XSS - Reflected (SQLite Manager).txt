@@ -1,0 +1,5 @@
+There is a hint in the page giving us the CVE no. of the xss vulnerability in the SQLite Manager , when read the CVE info
+It tell us the this version of Sqlite is vulnerable with xss in the " main.php "  page via " dbsel "parameter and in 
+Index.php page via " nsextt " parameter
+
+So now we go to " bwapp_ip/sqlite/main.php " and we will write in the url the infected parameter and some code to test. The final url will look like this " bwapp_ip/sqlite/main.php?dbsel=<script>document.write(document.cookie);</script> " and it gave us the cookie and session information.

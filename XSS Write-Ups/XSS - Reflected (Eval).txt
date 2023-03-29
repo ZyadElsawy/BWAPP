@@ -1,0 +1,11 @@
+When we first enter this challenge we saw this message " The current date on your computer is: " and it displays the current system time , when we inspect the paragraph that contains the time we saw this code 
+"
+<script>
+
+    eval("document.write(Date())");
+
+    </script>
+"
+And we noticed that there is a parameter in the url which is " date= " and its value is the function that displays the current time which is " date() "
+Lets try to replace this function with " alert() " .
+ALERTED!!!!!

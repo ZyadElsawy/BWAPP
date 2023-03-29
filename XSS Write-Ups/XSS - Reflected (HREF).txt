@@ -1,0 +1,10 @@
+We see a text box that asks for our name so lets type anything such as "test" to see what happens
+We see a message with the input we entered in the text box and a table with movies to vote
+Lets go back again and enter some html like this one " <h1>test</h1> " to see how it responds .
+The input is reflected as it is in the second page.
+Lets view the page source and see what is going on , our input goes in an anchor tag in the href attribute.
+Here is the line of code I found " <a href="xss_href-3.php?movie=2&amp;name=<h1">test&amp;action=vote&gt;Vote</a> " , 
+So we need to close the anchor tag first before we inject our payload .
+Lets try this one "/><script>alert(1);</script> 
+
+ALERTED!!!!!!!!
