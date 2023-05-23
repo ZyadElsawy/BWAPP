@@ -1,7 +1,0 @@
-When we first enter the challenge it asks as to enter the correct captcha to go to the challenge page.
-But you can easily bypass the captcha because there is a message says  " Pass the CAPTCHA before proceeding to here "
-If you clicked on here it will take you to the challenge page.
-There is search box that is telling us to search for a movie , when we search for a movie such as " iron man " is searches for it in the database if the movie exists it returns back to us with some info.
-Let's try to insert input like this " iron man '  " .
-There is an error message came out " Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'' at line 1 "
-This search box is vulnerable to SQL Injection
